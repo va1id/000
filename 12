@@ -20,7 +20,7 @@ const clientHTML = `
     </div>
     <div class="category" id="bapev4-extra">
       <h2>Extra</h2>
-      <button type="button" id="bapev4-funnychat" onclick="toggleButton(this)">FunnyChat</button>
+      <button type="button" id="bapev4-funnychat" onclick="toggleButton(this)">Spammer</button>
     </div>
   </div>
 `;
