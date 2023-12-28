@@ -1,6 +1,6 @@
 const clientHTML = `
   <div class="bapev4">
-    <img src="https://forums.vape.gg/data/attachments/0/435-488d9d5a93312d814a8dd300fbbef8ab.jpg" alt="Visual Icon">
+    <img src="https://cdn.discordapp.com/attachments/1183771771615330394/1190005072185282620/SiraCLient.png?ex=65a03996&is=658dc496&hm=06c428ceae7ed079995ca348bed1cdd7e0041703e81b3f8cba1ae4bb683497fc&" alt="Visual Icon">
     <div class="category" id="bapev4-visual">
       <h2>Visual</h2>
       <button type="button" id="bapev4-esp" onclick="toggleButton(this)">ESP</button>
@@ -8,14 +8,14 @@ const clientHTML = `
     </div>
     <div class="category" id="bapev4-combat">
       <h2>Combat</h2>
-      <button type="button" id="bapev4-autoclick" onclick="toggleButton(this)">Autoclick</button>
+      <button type="button" id="bapev4-autoclick" onclick="toggleButton(this)">Autoclicker</button>
       <button type="button" id="bapev4-highjump" onclick="toggleButton(this)">High Jump</button>
       <button type="button" id="bapev4-speed" onclick="toggleButton(this)">Speed</button>
     </div>
     <div class="category" id="bapev4-blatant">
       <h2>Blatant</h2>
       <button type="button" id="bapev4-killaura" onclick="toggleButton(this)">KillAura</button>
-      <button type="button" id="bapev4-killall" onclick="toggleButton(this)">KillAll</button>
+      <button type="button" id="bapev4-killall" onclick="toggleButton(this)">Kill All</button>
       <button type="button" id="bapev4-autoCollectFlag" onclick="toggleButton(this)">AutoCollectFlag</button>
     </div>
     <div class="category" id="bapev4-extra">
