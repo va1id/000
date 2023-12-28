@@ -1,0 +1,98 @@
+const clientHTML = `
+  <div class="bapev4">
+    <img src="https://forums.vape.gg/data/attachments/0/435-488d9d5a93312d814a8dd300fbbef8ab.jpg" alt="Visual Icon">
+    <div class="category" id="bapev4-visual">
+      <h2>Visual</h2>
+      <button type="button" id="bapev4-esp" onclick="toggleButton(this)">ESP</button>
+      <button type="button" id="bapev4-xray" onclick="toggleButton(this)">X-Ray</button>
+    </div>
+    <div class="category" id="bapev4-combat">
+      <h2>Combat</h2>
+      <button type="button" id="bapev4-autoclick" onclick="toggleButton(this)">Autoclick</button>
+      <button type="button" id="bapev4-highjump" onclick="toggleButton(this)">High Jump</button>
+      <button type="button" id="bapev4-speed" onclick="toggleButton(this)">Speed</button>
+    </div>
+    <div class="category" id="bapev4-blatant">
+      <h2>Blatant</h2>
+      <button type="button" id="bapev4-killaura" onclick="toggleButton(this)">KillAura</button>
+      <button type="button" id="bapev4-killall" onclick="toggleButton(this)">KillAll</button>
+      <button type="button" id="bapev4-autoCollectFlag" onclick="toggleButton(this)">AutoCollectFlag</button>
+    </div>
+    <div class="category" id="bapev4-extra">
+      <h2>Extra</h2>
+      <button type="button" id="bapev4-funnychat" onclick="toggleButton(this)">FunnyChat</button>
+    </div>
+  </div>
+`;
+
+
+const clientCSS = `
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .bapev4 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .category {
+      display: inline-block;
+      width: 200px;
+      background-color: #1a1616;
+      padding: 5px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+      border: none;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .category img {
+      width: 100%;
+      height: auto;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.5;
+      z-index: -1;
+    }
+
+    .category h2 {
+      margin: 0;
+      color: white;
+    }
+
+    .category button {
+      border: none;
+      background-color: transparent;
+      color: white;
+      padding: 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+
+    .category button:hover {
+      background-color: #f4f4f4;
+    }
+
+    .purple {
+      background-color: purple !important;
+    }
+  </style>
+`;
+
+window.toggleButton = function(button) {
+  button.classList.toggle('purple');
+}
